@@ -1,0 +1,12 @@
+tabWidth = 4
+printWidth = 100
+useTabs = false
+semi = true
+singleQuote = false
+trailingComma = "es5"
+bracketSpacing = true
+endOfLine = "lf"
+plugins = [
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss" # MUST come last
+]
