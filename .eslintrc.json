@@ -1,5 +1,8 @@
 {
     "extends": ["plugin:@typescript-eslint/recommended", "plugin:astro/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": { "project": ["./tsconfig.json"] },
+    "plugins": ["@typescript-eslint"],
     "overrides": [
         {
             // Define the configuration for `.astro` file.
