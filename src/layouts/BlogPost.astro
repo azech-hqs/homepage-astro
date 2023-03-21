@@ -1,47 +1,44 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import type { CollectionEntry } from "astro:content";
+import Background from "../components/Background.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { Header } from "../components/Header";
+import { JustifiedContent } from "../components/JustifiedContent";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage }: Props = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-				border-top: 1px solid #ddd;
-				margin: 1rem 0;
-			}
-		</style>
-	</head>
+    <head>
+        <BaseHead title={title} description={description} />
+    </head>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{
-					updatedDate && (
-						<div>
-							Last updated on <time>{updatedDate}</time>
-						</div>
-					)
-				}
-				<hr />
-				<slot />
-			</article>
-		</main>
-		<Footer />
-	</body>
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
+        <Background />
+        <div class="relative">
+            <Header client:only="solid-js" />
+            <main>
+                <JustifiedContent class="">
+                    <article class="prose prose-zinc prose-img:rounded dark:prose-invert">
+                        {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+                        <h1 class="mt-1 text-lg">{title}</h1>
+                        {pubDate && <time>{pubDate}</time>}
+                        {
+                            updatedDate && (
+                                <div>
+                                    Last updated on <time>{updatedDate}</time>
+                                </div>
+                            )
+                        }
+                        <hr class="border-1 my-4 border-solid border-zinc-300" />
+                        <slot />
+                    </article>
+                </JustifiedContent>
+            </main>
+        </div>
+        <Footer />
+    </body>
 </html>
