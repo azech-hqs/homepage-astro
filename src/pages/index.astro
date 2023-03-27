@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { JustifiedContent } from "../components/JustifiedContent";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import azPortrait from "../images/AZ_portrait.jpeg";
 ---
 
 <!DOCTYPE html>
@@ -13,44 +14,34 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
     <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
-        <script is:inline>
-            const theme = (() => {
-                if (typeof localStorage !== "undefined") {
-                    const themeFromStorage = localStorage.getItem("theme");
-                    if (typeof themeFromStorage === "string") {
-                        return themeFromStorage;
-                    }
-                }
-                if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                    return "dark";
-                }
-                return "light";
-            })();
-
-            console.log(`inline script theme: ${theme}`);
-            if (theme === "light") {
-                document.documentElement.classList.remove("dark");
-            } else {
-                document.documentElement.classList.add("dark");
-            }
-            window.localStorage.setItem("theme", theme);
-        </script>
         <Background />
         <div class="relative">
             <Header />
             <main>
                 <JustifiedContent class="sm:px-8 mt-9">
-                    <h1
-                        class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl"
-                    >
-                        Scientific Software Engineer
-                    </h1>
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                        <img
+                            src={azPortrait}
+                            class="ml-8 inline-flex h-48 w-48 rounded-full"
+                            alt=""
+                        />
+                        <div class="mt-4 sm:order-first sm:my-0">
+                            <h1
+                                class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl"
+                            >
+                                Alexander Zech
+                            </h1>
+                            <div class="text-xl font-extralight text-zinc-800 dark:text-zinc-100">
+                                Scientific Software Developer
+                            </div>
                     <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                         Hi there! My name is Alex and I'm passionate about science and software
                         development. I'm particularly interested in creating tools that can help
                         researchers with their work. I love the challenge of taking on new side
                         projects and I'm always eager to learn and grow in my field.
-                    </p>
+                            </p>
+                        </div>
+                    </div>
                 </JustifiedContent>
             </main>
             <Footer />
