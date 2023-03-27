@@ -1,43 +1,10 @@
 ---
-import logo from "../../public/az_logo_bold.png";
-import HeaderLink from "./HeaderLink.astro";
+import { JustifiedContent } from "./JustifiedContent";
+import { Navbar } from "./Navbar";
 ---
 
-<header class="flex">
-    <nav class="fixed top-0 flex w-screen flex-row bg-gray-800 shadow-md">
-        <img src={logo} class="relative m-2 flex h-5 items-center justify-center" alt="AZ" />
-        <HeaderLink
-            href="/"
-            class="relative flex items-center justify-center h-5 w-auto m-2 px-1 py-2 bg-gray-700 text-green-600 hover:bg-gray-600 hover:rounded-sm rounded-lg transition-all duration-200 ease-linear"
-        >
-            Home
-        </HeaderLink>
-        <HeaderLink
-            href="/blog"
-            class="relative flex items-center justify-center h-5 w-auto m-2 px-1 py-2 bg-gray-700 text-green-600 hover:bg-gray-600 hover:rounded-sm rounded-lg transition-all duration-200 ease-linear"
-        >
-            Blog
-        </HeaderLink>
-        <HeaderLink
-            href="/about"
-            class="relative flex items-center justify-center h-5 w-auto m-2 px-1 py-2 bg-gray-700 text-green-600 hover:bg-gray-600 hover:rounded-sm rounded-lg transition-all duration-200 ease-linear"
-        >
-            About
-        </HeaderLink>
-        <HeaderLink
-            href="https://twitter.com/astrodotbuild"
-            target="_blank"
-            class="relative flex items-center justify-center h-5 w-auto m-2 px-1 py-2 bg-gray-700 text-green-600 hover:bg-gray-600 hover:rounded-sm rounded-lg transition-all duration-200 ease-linear"
-        >
-            Twitter
-        </HeaderLink>
-        <HeaderLink
-            href="https://github.com/withastro/astro"
-            target="_blank"
-            class="relative flex items-center justify-center h-5 w-auto m-2 px-1 py-2 bg-gray-700 text-green-600 hover:bg-gray-600 hover:rounded-sm rounded-lg transition-all duration-200 ease-linear"
-        >
-            GitHub
-        </HeaderLink>
-    </nav>
-    <div class="h-10 w-screen">&nbsp;</div>
-</header>
+<JustifiedContent class="">
+    <div class="relative flex gap-4">
+        <Navbar />
+    </div>
+</JustifiedContent>
