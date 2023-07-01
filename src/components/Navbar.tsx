@@ -12,7 +12,7 @@ export const Navbar: Component = () => {
     return (
         <>
             <div class="flex flex-1 justify-end md:justify-center">
-                <nav class="pointer-events-auto z-40">
+                <nav class="pointer-events-auto z-40" id="navbar">
                     <button
                         class="group flex items-center px-4 py-2 text-zinc-800 focus:outline-none dark:text-zinc-200 md:hidden"
                         onClick={toggleMenu}
