@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "importsNotUsedAsValues": "error"
+    "importsNotUsedAsValues": "error",
+    "ignoreDeprecations": "5.0"
   }
 }
