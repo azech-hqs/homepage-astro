@@ -8,7 +8,10 @@
     "start": "astro dev",
     "build": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky install",
+    "lint": "eslint --cache src cypress *.{ts,cjs}",
+    "format": "prettier --check src"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
@@ -22,12 +25,16 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
     "cypress": "^12.16.0",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-astro": "^0.27.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "prettier": "2.8.3",
     "prettier-plugin-astro": "^0.7.2",
     "prettier-plugin-tailwindcss": "^0.2.2",
@@ -35,5 +42,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
