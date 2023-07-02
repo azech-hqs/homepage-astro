@@ -20,5 +20,8 @@
                 // "astro/no-set-html-directive": "error"
             }
         }
-    ]
+    ],
+    "rules": {
+        "@typescript-eslint/triple-slash-reference": "off"
+    }
 }
