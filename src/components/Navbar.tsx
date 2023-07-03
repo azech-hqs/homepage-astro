@@ -40,6 +40,7 @@ export const Navbar: Component = () => {
                     >
                         <NavBarItem title="Home" href="/" />
                         <NavBarItem title="About" href="/about" />
+                        <NavBarItem title="Publications" href="/publications" />
                         <NavBarItem title="Blog" href="/blog" />
                     </ul>
                 </nav>
