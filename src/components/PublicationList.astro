@@ -1,0 +1,26 @@
+---
+import type { Props as Publication } from "./PublicationPreview.astro";
+import PublicationPreview from "./PublicationPreview.astro";
+
+interface Props {
+    publications: Array<Publication>;
+}
+const { publications } = Astro.props;
+---
+
+<div class="flex flex-col gap-16">
+    {
+        publications.map((p) => (
+            <PublicationPreview
+                title={p.title}
+                journal={p.journal}
+                authors={p.authors}
+                year={p.year}
+                volume={p.volume}
+                page={p.page}
+                doi={p.doi}
+                keywords={p.keywords}
+            />
+        ))
+    }
+</div>
