@@ -1,6 +1,6 @@
 import type { ParentComponent } from "solid-js";
 
-export const JustifiedContent: ParentComponent<{ class: string }> = (props) => {
+export const JustifiedContent: ParentComponent<{ class?: string }> = (props) => {
     return (
         <div class={props.class}>
             <div class="mx-auto max-w-7xl lg:px-8">
