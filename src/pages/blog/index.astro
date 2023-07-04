@@ -32,6 +32,7 @@ const posts = (await getCollection("blog"))
                                     slug={post.slug}
                                     pubDate={post.data.pubDate}
                                     description={post.data.description}
+                                    thumbnail={post.data.heroImage}
                                 />
                             ))
                         }
