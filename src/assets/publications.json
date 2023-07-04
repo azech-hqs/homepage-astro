@@ -1,0 +1,180 @@
+[
+    {
+        "title": "CateCom: A Practical Data-Centric Approach to Categorization of Compuational Models",
+        "journal": "J. Chem. Inf. Model",
+        "authors": ["A. Zech", "T. Bazhirov"],
+        "year": "2022",
+        "volume": "62",
+        "page": "1268-1281",
+        "doi": "10.1021/acs.jcim.2c00112",
+        "keywords": ["#data-structures", "#schema", "#ontology"]
+    },
+    {
+        "title": "Dissociation of HCl in water nanoclusters: an energy decomposition analysis perspective",
+        "journal": "Phys. Chem. Chem. Phys.",
+        "authors": ["A. Zech", "M. Head-Gordon"],
+        "year": "2021",
+        "volume": "23",
+        "page": "26737-26749",
+        "doi": "10.1039/D1CP04587C",
+        "keywords": ["#energy-decomposition-analysis", "#ALMO-EDA", "#acid-dissociation"]
+    },
+    {
+        "title": "Effective Two-Body Interactions",
+        "journal": "J. Phys. Chem. A",
+        "authors": ["C. Mackie", "A. Zech", "M. Head-Gordon"],
+        "year": "2021",
+        "volume": "125",
+        "page": "7750-7758",
+        "doi": "10.1021/acs.jpca.1c05677",
+        "keywords": ["#many-body-expansion", "#water-nanocluster", "#acid-dissociation"]
+    },
+    {
+        "title": "Benchmark of the Extension of Frozen-Density Embedding Theory to Nonvariational Correlated Methods: The Embedded-MP2 Case",
+        "journal": "J. Chem. Theory Comput.",
+        "authors": ["R. Sen", "C. E. González-Espinoza", "A. Zech", "A. Dreuw", "T. A. Wesolowski"],
+        "year": "2021",
+        "volume": "17",
+        "page": "4049-4062",
+        "doi": "10.1021/acs.jctc.1c00228",
+        "keywords": ["#frozen-density-embedding", "#perturbation-theory", "#benchmark"]
+    },
+    {
+        "title": "Software for the frontiers of quantum chemistry: An overview of developments in the Q-Chem 5 package",
+        "journal": "J. Chem. Phys.",
+        "authors": ["E. Epifanovksy", "A. T. B. Gilbert", "X. Feng", "et al."],
+        "year": "2021",
+        "volume": "155",
+        "page": "084801",
+        "doi": "10.1063/5.0055522",
+        "keywords": ["#Q-Chem", "#computational-chemistry", "#software"]
+    },
+    {
+        "title": "OpenMolcas: From Source Code to Insight",
+        "journal": "J. Chem. Theory Comput.",
+        "authors": ["I. Fdezz. Galván", "M. Vacher", "A. Alavi", "et al."],
+        "year": "2019",
+        "volume": "15",
+        "page": "5925-5964",
+        "doi": "10.1021/acs.jctc.9b00532",
+        "keywords": ["#Molcas", "#OpenMolcas", "#computational-chemistry", "#software"]
+    },
+    {
+        "title": "Extension of frozen-density embedding theory for non-variational embedded wavefunctions",
+        "journal": "J. Chem. Phys.",
+        "authors": ["A. Zech", "A. Dreuw", "T. A. Wesolowski"],
+        "year": "2019",
+        "volume": "150",
+        "page": "121101",
+        "doi": "10.1063/1.5089233",
+        "keywords": [
+            "#frozen-density-embedding",
+            "#perturbation-theory",
+            "#non-variational-wave-function"
+        ]
+    },
+    {
+        "title": "Explicit vs. implicit electronic polarisation of environment of an embedded chromophore in frozen-density embedding theory",
+        "journal": "Phys. Chem. Chem. Phys.",
+        "authors": ["N. Ricardi", "A. Zech", "Y. Gimbal-Zofka", "T. A. Wesolowski"],
+        "year": "2018",
+        "volume": "20",
+        "page": "26053-26062",
+        "doi": "10.1039/C8CP05634J",
+        "keywords": ["#frozen-density-embedding", "#electronic-polarization"]
+    },
+    {
+        "title": "Benchmark of Excitation Energy Shifts from Frozen-Density Embedding Theory: Introduction of a Density-Overlap-Based Applicability Threshold",
+        "journal": "J. Chem. Theory Comput.",
+        "authors": ["A. Zech", "N. Ricardi", "S. Prager", "A. Dreuw", "T. A. Wesolowski"],
+        "year": "2018",
+        "volume": "14",
+        "page": "4028-4040",
+        "doi": "10.1021/acs.jctc.8b00201",
+        "keywords": ["#frozen-density-embedding", "#ADC", "#FDE-ADC(2)", "#benchmark"]
+    },
+    {
+        "title": "Implementation and Application of the Frozen Density Embedding Theory with the Algebraic Diagrammatic Construction Scheme for the Polarization Propagator up to Third Order",
+        "journal": "J. Chem. Theory Comput.",
+        "authors": ["S. Prager", "A. Zech", "T. A. Wesolowski", "A. Dreuw"],
+        "year": "2017",
+        "volume": "13",
+        "page": "4711-4725",
+        "doi": "10.1021/acs.jctc.7b00461",
+        "keywords": ["#frozen-density-embedding", "#ADC", "#FDE-ADC(3)", "#software"]
+    },
+    {
+        "title": "First time combination of frozen density embedding theory with the algebraic diagrammatic construction scheme for the polarization propagator of second order",
+        "journal": "J. Chem. Phys.",
+        "authors": ["S. Prager", "A. Zech", "F. Aquilante", "A. Dreuw", "T. A. Wesolowski"],
+        "year": "2016",
+        "volume": "144",
+        "page": "204103",
+        "doi": "10.1063/1.4948741",
+        "keywords": ["#frozen-density-embedding", "#ADC", "#FDE-ADC(2)", "#software"]
+    },
+    {
+        "title": "Homogeneity properties of the embedding potential in frozen-density embedding theory",
+        "journal": "Mol. Phys.",
+        "authors": ["A. Zech", "F. Aquilante", "T. A. Wesolowski"],
+        "year": "2015",
+        "volume": "114",
+        "page": "1199-1206",
+        "doi": "10.1080/00268976.2015.1125027",
+        "keywords": ["#frozen-density-embedding", "#density-functional-theory", "#inhomogeneity"]
+    },
+    {
+        "title": "Orthogonality of embedded wave functions for different states in frozen-density embedding theory",
+        "journal": "J. Chem. Phys.",
+        "authors": ["A. Zech", "F. Aquilante", "T. A. Wesolowski"],
+        "year": "2015",
+        "volume": "143",
+        "page": "164106",
+        "doi": "10.1063/1.4933372",
+        "keywords": ["#electronic-structure-theory", "#frozen-density-embedding", "#linearization"]
+    },
+    {
+        "title": "Ab initio quantum study of UV absorption spectra of cis- and trans-hexatriene",
+        "journal": "J. Mol. Spec.",
+        "authors": ["A. Komainda", "A. Zech", "H. Köppel"],
+        "year": "2015",
+        "volume": "311",
+        "page": "25-35",
+        "doi": "10.1016/j.jms.2014.12.022",
+        "keywords": [
+            "#vibronic-interaction",
+            "#UV-absorption",
+            "#spectroscopy",
+            "#hexatriene",
+            "#CASPT2",
+            "#MRCI"
+        ]
+    },
+    {
+        "title": "Utilizing the 8-Methoxycyclooct-4-en-1-ide Unit As a Hydrogen Atom Acceptor en Route to 'Metal-Borane Pincers'",
+        "journal": "Organometallics",
+        "authors": ["A. Zech", "M. F. Haddow", "H. Othman", "G. R. Owen"],
+        "year": "2012",
+        "volume": "31",
+        "page": "6753-6760",
+        "doi": "10.1021/om300482m",
+        "keywords": ["#hydride-transfer", "#scorpionate-ligand", "#metallaboratrane"]
+    },
+    {
+        "title": "Scorpionate Ligands Based on 2-Mercaptopyridine: A Ligand with a Greater Propensity To Sting?",
+        "journal": "Organometallics",
+        "authors": [
+            "G. Dyson",
+            "A. Zech",
+            "B. W. Rawe",
+            "M. F. Haddow",
+            "A. Hamilton",
+            "G. R. Owen"
+        ],
+        "year": "2011",
+        "volume": "30",
+        "page": "5844-5850",
+        "doi": "10.1021/om200694r",
+        "keywords": ["#hydride-transfer", "#scorpionate-ligand", "#metallaboratrane"]
+    }
+]
