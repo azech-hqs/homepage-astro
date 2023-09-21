@@ -9,6 +9,13 @@ import { JustifiedContent } from "../components/JustifiedContent";
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage }: Props = Astro.props;
+const timeOptions: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+};
 ---
 
 <html class="dark h-full antialiased" lang="en">
@@ -24,8 +31,8 @@ const { title, description, pubDate, updatedDate, heroImage }: Props = Astro.pro
                 <JustifiedContent class="">
                     <article class="prose prose-zinc prose-img:rounded dark:prose-invert">
                         {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-                        <h1 class="mt-1 text-lg">{title}</h1>
-                        {pubDate && <time>{pubDate}</time>}
+                        <h1 class="mt-1 text-2xl">{title}</h1>
+                        {pubDate && <time>{pubDate.toLocaleDateString("en-us", timeOptions)}</time>}
                         {
                             updatedDate && (
                                 <div>
