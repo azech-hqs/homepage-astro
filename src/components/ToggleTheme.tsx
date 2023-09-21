@@ -1,4 +1,4 @@
-import { Component, createEffect, createSignal } from "solid-js";
+import { createEffect, createSignal, type Component } from "solid-js";
 
 export const ToggleTheme: Component = () => {
     const [theme, setTheme] = createSignal<string>(localStorage.getItem("theme") ?? "light");
