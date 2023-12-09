@@ -1,0 +1,91 @@
+---
+---
+
+<div class="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <!--
+    Background backdrop, show/hide based on modal state.
+
+    Entering: "ease-out duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in duration-200"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+    <div class="fixed inset-0 z-50 w-screen overflow-y-auto">
+        <div
+            class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+            <!--
+        Modal panel, show/hide based on modal state.
+
+        Entering: "ease-out duration-300"
+          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          To: "opacity-100 translate-y-0 sm:scale-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100 translate-y-0 sm:scale-100"
+          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      -->
+            <div
+                class="relative transform overflow-hidden rounded-lg bg-neutral-800 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+            >
+                <div class="bg-neutral-800 px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                            <h3
+                                class="text-base font-semibold leading-6 text-zinc-100"
+                                id="modal-title"
+                            >
+                                Privacy Policy
+                            </h3>
+                            <div class="mt-2">
+                                <p class="text-sm text-zinc-400">
+                                    Thank you for visiting Alexander Zech's personal website. This
+                                    privacy policy outlines how we handle information on this site.
+                                </p>
+                            </div>
+                            <h4 class="mt-4 text-zinc-100">Information Collection and Usage</h4>
+                            <p class="mt-2 text-sm text-zinc-400">
+                                We do not collect any personal information from visitors to this
+                                website. We do not use cookies or other tracking mechanisms. Your
+                                visit is purely informational, and no data is gathered or stored.
+                            </p>
+                            <h4 class="mt-4 text-zinc-100">Third-party Services</h4>
+                            <p class="mt-2 text-sm text-zinc-400">
+                                At present, we do not utilize any third-party services or tools that
+                                collect user data. Any future addition of such services will be
+                                outlined in this privacy policy.
+                            </p>
+                            <h4 class="mt-4 text-zinc-100">Data Storage and Handling</h4>
+                            <p class="mt-2 text-sm text-zinc-400">
+                                As we do not collect any user information, we do not have any
+                                storage or handling procedures for such data.
+                            </p>
+                            <h4 class="mt-4 text-zinc-100">Contact Form</h4>
+                            <p class="mt-2 text-sm text-zinc-400">
+                                There is no contact form or mechanism on this website for users to
+                                submit inquiries or messages. All inquiries should be addressed to
+                                info(at)azech(dot)tech.
+                            </p>
+                            <h4 class="mt-4 text-zinc-100">Updates to this Privacy Policy</h4>
+                            <p class="mt-2 text-sm text-zinc-400">
+                                Any future changes to our privacy policy will be posted on this
+                                page.
+                            </p>
+                            <h4 class="mt-4 text-zinc-100">Questions</h4>
+                            <p class="mt-2 text-sm text-zinc-400">
+                                If you have any questions about this privacy policy, please contact
+                                us at info(at)azech(dot)tech.
+                            </p>
+                            <p class="mt-4 text-sm text-zinc-400">
+                                This privacy policy is effective as of December 12, 2023.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
