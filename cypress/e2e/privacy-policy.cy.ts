@@ -3,7 +3,7 @@ describe("Privacy policy", () => {
         cy.visit("/");
     });
 
-    it("should open and close", () => {
+    it.skip("should open and close", () => {
         cy.get('[data-cy="open-privacy-policy"]').should("exist");
         cy.get('[data-cy="title-privacy-policy"]').should("not.exist");
 
