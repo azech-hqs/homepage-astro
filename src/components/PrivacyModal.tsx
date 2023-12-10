@@ -7,7 +7,11 @@ function PrivacyPolicy() {
 
     return (
         <div>
-            <button onclick={handleOpen} class="text-xs text-zinc-600 underline dark:text-zinc-400">
+            <button
+                onclick={handleOpen}
+                data-cy="open-privacy-policy"
+                class="text-xs text-zinc-600 underline dark:text-zinc-400"
+            >
                 Privacy Policy
             </button>
             {isOpen() && <PrivacyModal isOpen={isOpen()} closeModal={handleClose} />}
@@ -31,6 +35,7 @@ function PrivacyModal(props: ModalProps) {
                 <div class="relative h-1/2 overflow-y-auto rounded-lg bg-neutral-800 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                     <div class="bg-neutral-800 px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                         <button
+                            data-cy="close-privacy-policy"
                             onclick={closeModal}
                             class="absolute right-0 top-0 mr-2 mt-2 rounded-full focus:outline-none"
                         >
@@ -53,7 +58,7 @@ function PrivacyModal(props: ModalProps) {
                                     </svg>
                                     <h3
                                         class="text-center text-base font-semibold leading-6 text-zinc-100"
-                                        id="modal-title"
+                                        data-cy="title-privacy-policy"
                                     >
                                         Privacy Policy
                                     </h3>
