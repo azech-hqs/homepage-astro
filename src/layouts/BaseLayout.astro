@@ -28,7 +28,7 @@ const { title, description, heroImage } = frontmatter;
             <Header />
             <main>
                 <JustifiedContent class="sm:px-8 mt-9">
-                    <article class="prose prose-zinc prose-img:rounded dark:prose-invert">
+                    <article class="prose prose-zinc dark:prose-invert prose-img:rounded">
                         {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
                         <h1 class="mt-1 text-lg">{title}</h1>
                         <hr class="border-1 my-4 border-solid border-zinc-300" />
@@ -36,7 +36,7 @@ const { title, description, heroImage } = frontmatter;
                     </article>
                 </JustifiedContent>
             </main>
+            <Footer />
         </div>
-        <Footer />
     </body>
 </html>
