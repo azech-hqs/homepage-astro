@@ -1,5 +1,15 @@
 [
     {
+        "title": "Second-Generation Energy Decomposition Analysis of Intermolecular Interaction Energies from the Second-Order Mo̷ller–Plesset Theory: An Extensible, Orthogonal Formulation with Useful Basis Set Convergence for All Terms",
+        "journal": "J. Chem. Theory Comput.",
+        "authors": ["Z. Wang", "K. Ikeda", "H. Shen", "M. Loipersberger", "A. Zech", "A. Aldossary", "T. Head-Gordon", "M. Head-Gordon"],
+        "year": "2025",
+        "volume": "TBD",
+        "page": "TBD",
+        "doi": "10.1021/acs.jctc.4c01301",
+        "keywords": ["#energy-decomposition-analysis", "#ALMO-EDA", "#perturbation-theory"]
+    },
+    {
         "title": "CateCom: A Practical Data-Centric Approach to Categorization of Compuational Models",
         "journal": "J. Chem. Inf. Model",
         "authors": ["A. Zech", "T. Bazhirov"],
