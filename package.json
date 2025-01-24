@@ -48,7 +48,7 @@
         "node": ">=18.14.1"
     },
     "lint-staged": {
-        "*.{js,ts,tsx,astro}": "eslint --cache --fix",
-        "*.{js,ts,tsx,css,astro}": "prettier --write"
+        "*.{js,ts,tsx,astro}": "eslint --cache",
+        "*.{js,ts,tsx,css,astro}": "prettier --check"
     }
 }
