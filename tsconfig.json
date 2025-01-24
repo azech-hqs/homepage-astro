@@ -3,7 +3,8 @@
     "compilerOptions": {
         "jsx": "preserve",
         "jsxImportSource": "solid-js",
-        "ignoreDeprecations": "5.0"
+        "ignoreDeprecations": "5.0",
+        "verbatimModuleSyntax": true
     },
     "include": [".astro/types.d.ts", "**/*"],
     "exclude": ["dist"]
