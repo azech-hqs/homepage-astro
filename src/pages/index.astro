@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Background from "../components/Background.astro";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
@@ -20,10 +21,11 @@ import azPortrait from "../images/AZ_portrait.webp";
             <main class="flex-grow">
                 <JustifiedContent class="mt-9 sm:px-8">
                     <div class="sm:flex sm:items-center sm:justify-between">
-                        <img
-                            src={azPortrait.src}
+                        <Image
+                            src={azPortrait}
                             class="ml-8 inline-flex h-48 w-48 rounded-full"
-                            alt=""
+                            alt="That's me!"
+                            loading="eager"
                         />
                         <div class="mt-4 sm:order-first sm:my-0">
                             <h1
