@@ -12,7 +12,8 @@
         "astro": "astro",
         "prepare": "husky",
         "lint": "eslint --cache src cypress",
-        "format": "prettier --check src"
+        "format": "prettier --check src",
+        "format:write": "prettier --write src"
     },
     "dependencies": {
         "@astrojs/mdx": "^4.3.13",
